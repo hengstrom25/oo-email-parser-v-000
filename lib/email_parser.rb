@@ -15,6 +15,7 @@ class EmailParser
     email_array.collect do | email |
       emails.split(", ")
     end
+    email_array.uniq.flatten
   end
   
 end
