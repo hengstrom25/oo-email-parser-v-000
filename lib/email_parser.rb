@@ -11,11 +11,9 @@ class EmailParser
   end
   
   def parse
-    email_array = emails.split(" ")
-    email_array.collect do | email |
-      email.split(", ")
-    end
-    email_array.uniq.flatten
+    email_array = email.split(/[ ,]+/)
+    email_array.uniq!    
+    email_array
   end
   
 end
