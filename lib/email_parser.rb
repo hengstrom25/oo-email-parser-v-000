@@ -12,6 +12,8 @@ class EmailParser
   
   def parse
     if @emails
+      @emails.split(" ")
+    else
       @emails.split
   end
   
