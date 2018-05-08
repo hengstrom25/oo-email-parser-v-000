@@ -11,11 +11,8 @@ class EmailParser
   end
   
   def parse
-    email_array = emails.split(" ")
-    email_array.collect do | email |
-      emails.split(" ")
-    end
-    email_array.uniq.flatten
+    if @emails
+      @emails.split
   end
   
 end
