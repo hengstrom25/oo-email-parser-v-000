@@ -13,7 +13,8 @@ class EmailParser
   def parse
     email_array = email.split(" ")
     email_array.collect do |email|
-      emails.split
+      emails.split(", ")
+    end
   end
   
 end
